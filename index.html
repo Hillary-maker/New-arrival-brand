@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New-arrival-brand</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+       }
+       .box h3{
+        color: orange;
+       }
+       .linkwrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+       }
+       .linkwrapper li a{
+        color: black;
+        text-decoration: none;
+       }
+       .box2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+       }
+       .img{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       }
+       .img2{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .btn{
+        background-color: orange;
+        color: white;
+        border: none;
+        padding: 9px 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+       }
+       .section{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .box3{
+        width: 80%;
+        height: 100%;
+        background-color: aquamarine;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.419)),url(images/tamara-bellis-bvVYO4PLsbs-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .p{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: lighter;
+       }
+       .p2{
+        font-size: 4rem;
+        margin-top: 60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+       }
+       .paras{
+        font-size: 15px;
+        margin-top: 60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 500px;
+        text-align: center;
+       }
+       .second{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 300px;
+       }
+       .box4{
+        width: 80%;
+        height: 20vh;
+       }
+       .h2{
+        font-size: 3rem;
+        font-weight: lighter;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        left: 140px;
+        top: 830px;
+       }
+       .p3{
+        color: lightgray;
+        font-size: 15px;
+        font-weight: lighter;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: absolute;
+        right: 140px;
+        top: 830px;
+       }
+       .third{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        position: absolute;
+        left: 10px;
+        top: 1100px;
+       }
+       .box5{
+        width: 550px;
+        height: 400px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        left: 10px;
+       }
+       .h1{
+        font-size: 15px;
+        font-weight: lighter;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: absolute;
+        left: 10px;
+        top: 450px;
+       }
+       .img6{
+        width: 800px;
+        height: 400px;
+        object-fit: cover;
+        background-size: cover;
+       }
+       .p4{
+        color: lightgray;
+        font-size: 15px;
+        font-weight: lighter;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: absolute;
+        top: 450px;
+        left: 500px;
+       }
+       .box6{
+            width: 450px;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 220px 220px;
+            gap: 10px;
+            position: absolute;
+            top: 180px;
+            left: 900px;
+        }
+       .pics{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+        .pics img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .box11{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            /* margin: 5px; */
+             /* display: inline-block; */
+             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.419)),url(images/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg);
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+        }
+        .box12{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            /* margin: 5px; */
+             /* display: inline-block; */
+             position: absolute;
+             left: 900px;
+             top: 1870px;
+             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.419)),url(images/bruce-mars-FWVMhUa_wbY-unsplash.jpg);
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+        }
+        .img10{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img11{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .p7{
+        font-size: 4rem;
+        margin-top: 60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bolder;
+       }
+       .p8{
+        font-size: 4rem;
+        margin-top: 60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bolder;
+       }
+       .fourth{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+       }
+       .box13{
+        width: 80%;
+        height: 100%;
+        background-color: aquamarine;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.404),rgba(0, 0, 0, 0.419)),url(images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .p9{
+        font-size: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 700px;
+       }
+       .p10{
+        font-size: 7rem;
+        margin-top: 60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bolder;
+       }
+       .fantastic{
+        font-size: 7rem;
+        margin-top: 60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 500px;
+        font-weight: bolder;
+        text-align: center;
+       }
+       .fifth{
+        width: 100%;
+        height: 90vh;
+        /* background-color: palevioletred; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        box-align: row;
+        gap: 10px;
+       }
+       .box18{
+    width: 1500px;
+    height: 500px;
+    position: absolute;
+    top: 3050px;
+}
+.p{
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+.pa{
+    font-size: 10px;
+    gap: 30px;
+    color: black;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+.par{
+    font-size: 10px;
+    gap: 30px;
+    color: black;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+.btn9{
+    background-color: orange;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 400px;
+    top: 200px;
+    padding: 7px 30px;
+}
+.box19{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 3250px;
+    right: 50px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="box">
+                <h3>Avatar</h3>
+                <ul class="linkwrapper">
+                    <li><a href="#">New arrival</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Bottoms</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+         <div class="box2">
+            <img src="images/shopping-cart-icon-shopping-trolley-icon-shopping-cart-logo-container-for-goods-and-products-economics-symbol-design-elements-basket-symbol-silhouette-retail-design-elements-vector.jpg" class="img" alt="">
+            <img src="images/nigeria-flag-aftrican-country-national-symbol-free-vector.jpg" class="img2"alt="">
+            <button class="btn">Log in</button>
+         </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="box3">
+            <h2 class="p">*New Arrival*</h2>
+            <h1 class="p2">FIZ-R200 SERIES</h1>
+            <p class="paras">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta unde tenetur nihil corrupti rem ut odio. Nemo perferendis provident laudantium dicta consequuntur iure, illum tempora et libero quo sequi?
+            </p>
+        </div>
+    </section>
+    <section class="second">
+        <div class="box4">
+            <h2 class="h2">New Arrival</h2>
+            <p class="p3">Catalogue</p>
+        </div>
+    </section>
+    <section class="third">
+        <div class="box5">
+            <h1 class="h1"> FIZ-R200G</h1>
+            <p class="p4">$1234</p>
+            <img src="images/jan-kopriva-jcCO9w7ycl8-unsplash.jpg" class="img6">
+        </div>
+        <div class="box6">
+            <div class="pics"> 
+                <img src="images/calvin-lupiya--yPg8cusGD8-unsplash.jpg" alt="">
+            </div>
+            <div class="pics">
+                <img src="images/brooke-cagle-rIT4VWXsKC4-unsplash.jpg" alt=""> 
+            </div>
+            <div class="pics">
+                <img src="images/amir-seilsepour-_hAaFD1ucfk-unsplash.jpg" alt="">
+                 </div>
+            <div class="pics"> 
+                <img src="images/kaysha-OJvh3njqTTQ-unsplash.jpg" alt="">
+            </div>
+            <h1 class="h1"> FIZ-R200G</h1>
+            <p class="p4">$1234</p>
+        </div>
+    </section>
+    <section>
+    <div class="box11">
+        <h1 class="p7">MX-150</h1>
+    </div>
+    <div class="box12">
+        <h1 class="p8">REVO-125</h1>
+    </div>
+</section>
+<section class="fourth">
+    <div class="box13">
+        <h2 class="p9">Astrea</h2>
+        <h1 class="p10">Legend</h1>
+        <p class="fantastic">
+            500cc
+        </p>
+    </div>
+</section>
+<section class="fifth">
+    <div class="box18">
+            <p class="p">
+                Lorem <br />
+                ipsum <br />
+                dolor <br />
+                sit <br /> 
+                amet <br />
+                consectetur.
+            </p>
+            <p class="pa">
+                Lorem <br />
+                ipsum <br />
+                dolor <br />
+                sit <br /> 
+                amet <br />
+                consectetur.
+            </p>
+            <p class="par">
+                Loremsa <br />
+                ipsumsa <br />
+                dolorsas <br />
+                sitsass <br /> 
+                ametsass <br />
+                consectetur.
+            </p>
+        </div>
+    </div>
+    <div class="box19">
+        <h2>
+            NEWSLETTER +20% OFF
+           </h2>
+           Lorem ipsum dolor sit amet consectetur adipisicing <br />
+           voluptates cumque enim dolor minus recusandae temporibus eos <br />
+           corporis quam ratione empore quos, quae aliquid quo, et <br />
+           architecto!
+           <button class="btn9">Get 20%</button>
+    </div>
+</section>
+</section>
+</body>
+</html>
